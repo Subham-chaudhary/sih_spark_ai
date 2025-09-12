@@ -316,6 +316,15 @@
         "documentation": {}
     },
     {
+        "label": "query_and_embed",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def query_and_embed(query: str):\n    \"\"\"\n    Chunks a query, generates embeddings, performs a similarity search,\n    and returns the content of the most similar medical data entries.\n    \"\"\"\n    try:\n        text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)\n        chunks = text_splitter.split_text(query)\n        if not chunks:\n            return \"No content to process.\"",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
         "label": "get_config",
         "kind": 2,
         "importPath": "main",
@@ -343,6 +352,15 @@
         "documentation": {}
     },
     {
+        "label": "generate_response_endpoint",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def generate_response_endpoint():\n    \"\"\"\n    API endpoint to receive a query, retrieve relevant medical data,\n    and generate a response using the Qwen model.\n    \"\"\"\n    data = request.get_json()\n    if not data or 'query' not in data:\n        return jsonify({\"error\": \"Missing 'query' in request body\"}), 400\n    user_query = data['query']\n    # Retrieve relevant medical data using the query_and_embed function",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
         "label": "app",
         "kind": 5,
         "importPath": "main",
@@ -356,7 +374,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "SYSTEM_PROMPT = \"\"\"You are Spark AI, an advanced medical assistant chatbot.  \nYour purpose is:\n1. Understand users' symptoms and ask clarifying questions if needed.  \n2. Provide **pre-treatment advice only** (self-care, over-the-counter options, lifestyle tips).  \n3. Never give prescriptions or replace professional medical diagnosis. Always include a safety disclaimer.  \n4. Use contextual data fed into the conversation (user profile: age, sex, history; local region info: weather, current outbreaks) to tailor your responses.  \n5. Respond in a clear, empathetic, and concise tone suitable for non-medical users.  \n6. If information is missing, politely ask the user to provide it.  \n7. Stay strictly within the scope of symptoms, first-aid, and health awareness. Do not answer unrelated topics.  \nAlways end with:  ",
+        "peekOfCode": "SYSTEM_PROMPT = \"\"\"You are Spark AI, an advanced medical assistant chatbot.  \nYour purpose is:\n1. Understand users' symptoms and ask clarifying questions if needed.  \n2. Provide **pre-treatment advice only** (self-care, over-the-counter options, lifestyle tips).  \n3. Never give prescriptions or replace professional medical diagnosis. Always include a safety disclaimer.  \n4. Use contextual data fed into the conversation (user profile: age, sex, history; local region info: weather, current outbreaks) to tailor your responses.  \n5. Respond in a clear, empathetic, and concise tone suitable for non-medical users.  \n6. If information is missing, politely ask the user to provide it.  \n7. Stay strictly within the scope of symptoms, first-aid, and health awareness. Do not answer unrelated topics.  \nAlways end with when a treatment is suggested:  ",
         "detail": "main",
         "documentation": {}
     }
