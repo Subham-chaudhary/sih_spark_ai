@@ -1,0 +1,363 @@
+[
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "update_config",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "update_config",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "importPath": "sqlalchemy.sql",
+        "description": "sqlalchemy.sql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.sql",
+        "documentation": {}
+    },
+    {
+        "label": "RecursiveCharacterTextSplitter",
+        "importPath": "langchain.text_splitter",
+        "description": "langchain.text_splitter",
+        "isExtraImport": true,
+        "detail": "langchain.text_splitter",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"Spark_ai\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"Spark_ai\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"Spark_ai\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"Spark_ai\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"Spark_ai\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "kind": 6,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "class Config:\n    #psql here\n    DB_USER = os.getenv(\"DB_USER\", \"your_db_user\")\n    DB_PASSWORD = os.getenv(\"DB_PASSWORD\", \"your_db_password\")\n    DB_HOST = os.getenv(\"DB_HOST\", \"localhost:5432\")\n    DB_PORT = os.getenv(\"DB_PORT\", \"5432\")\n    DB_NAME = os.getenv(\"DB_NAME\", \"your_db_name\")\n    DATABASE_URL = os.getenv(\"DATABASE_URL\", f\"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}?sslmode=require&channel_binding=require\")\n    print(\"DATABASE_URL:\", DATABASE_URL)\n    #ollama here",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "update_config",
+        "kind": 2,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "def update_config(new_db_url=None, new_db_user=None, new_db_password=None, new_db_host=None, new_db_port=None, new_db_name=None, new_ollama_url=None, new_ollama_model=None):\n    global config, engine, SessionLocal\n    # global config\n    if new_db_url:\n        config.DATABASE_URL = new_db_url\n    if new_db_user:\n        config.DB_USER = new_db_user\n    if new_db_password:\n        config.DB_PASSWORD = new_db_password\n    if new_db_host:",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "def get_db():\n    \"\"\"Dependency to get a database session.\"\"\"\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "config = Config()\nengine = create_engine(config.DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\ndef update_config(new_db_url=None, new_db_user=None, new_db_password=None, new_db_host=None, new_db_port=None, new_db_name=None, new_ollama_url=None, new_ollama_model=None):\n    global config, engine, SessionLocal\n    # global config\n    if new_db_url:\n        config.DATABASE_URL = new_db_url\n    if new_db_user:\n        config.DB_USER = new_db_user",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "engine = create_engine(config.DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\ndef update_config(new_db_url=None, new_db_user=None, new_db_password=None, new_db_host=None, new_db_port=None, new_db_name=None, new_ollama_url=None, new_ollama_model=None):\n    global config, engine, SessionLocal\n    # global config\n    if new_db_url:\n        config.DATABASE_URL = new_db_url\n    if new_db_user:\n        config.DB_USER = new_db_user\n    if new_db_password:",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\ndef update_config(new_db_url=None, new_db_user=None, new_db_password=None, new_db_host=None, new_db_port=None, new_db_name=None, new_ollama_url=None, new_ollama_model=None):\n    global config, engine, SessionLocal\n    # global config\n    if new_db_url:\n        config.DATABASE_URL = new_db_url\n    if new_db_user:\n        config.DB_USER = new_db_user\n    if new_db_password:\n        config.DB_PASSWORD = new_db_password",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "get_config",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_config():\n    \"\"\"API endpoint to retrieve application configuration.\"\"\"\n    return jsonify(config.__dict__), 200\n@app.route('/api/config/set', methods=['POST'])\ndef set_config():\n    \"\"\"API endpoint to update application configuration.\"\"\"\n    data = request.get_json()\n    if not data:\n        return jsonify({\"error\": \"Invalid JSON\"}), 400\n    try:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "set_config",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def set_config():\n    \"\"\"API endpoint to update application configuration.\"\"\"\n    data = request.get_json()\n    if not data:\n        return jsonify({\"error\": \"Invalid JSON\"}), 400\n    try:\n        update_config(\n            new_db_user=data.get('db_user'),\n            new_db_password=data.get('db_password'),\n            new_db_host=data.get('db_host'),",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "process_text",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def process_text():\n    \"\"\"API endpoint to process text, generate embeddings, and store in the database.\"\"\"\n    data = request.get_json()\n    if not data:\n        return jsonify({\"error\": \"empty request\"}), 400\n    try:\n        text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)\n        chunks = text_splitter.split_text(data.get('data'))\n        db_session = next(get_db()) # Get a database session\n        inserted = 0",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = Flask(__name__)\nSYSTEM_PROMPT = \"\"\"You are Spark AI, an advanced medical assistant chatbot.  \nYour purpose is:\n1. Understand users' symptoms and ask clarifying questions if needed.  \n2. Provide **pre-treatment advice only** (self-care, over-the-counter options, lifestyle tips).  \n3. Never give prescriptions or replace professional medical diagnosis. Always include a safety disclaimer.  \n4. Use contextual data fed into the conversation (user profile: age, sex, history; local region info: weather, current outbreaks) to tailor your responses.  \n5. Respond in a clear, empathetic, and concise tone suitable for non-medical users.  \n6. If information is missing, politely ask the user to provide it.  \n7. Stay strictly within the scope of symptoms, first-aid, and health awareness. Do not answer unrelated topics.  ",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "SYSTEM_PROMPT",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "SYSTEM_PROMPT = \"\"\"You are Spark AI, an advanced medical assistant chatbot.  \nYour purpose is:\n1. Understand users' symptoms and ask clarifying questions if needed.  \n2. Provide **pre-treatment advice only** (self-care, over-the-counter options, lifestyle tips).  \n3. Never give prescriptions or replace professional medical diagnosis. Always include a safety disclaimer.  \n4. Use contextual data fed into the conversation (user profile: age, sex, history; local region info: weather, current outbreaks) to tailor your responses.  \n5. Respond in a clear, empathetic, and concise tone suitable for non-medical users.  \n6. If information is missing, politely ask the user to provide it.  \n7. Stay strictly within the scope of symptoms, first-aid, and health awareness. Do not answer unrelated topics.  \nAlways end with:  ",
+        "detail": "main",
+        "documentation": {}
+    }
+]
