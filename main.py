@@ -166,13 +166,15 @@ def generate_response_endpoint():
         return jsonify({"error": "Missing 'query' in request body"}), 400
 
     user_query = data['query']
+    user_info = data['info']
+    
 
     # Retrieve relevant medical data using the query_and_embed function
     retrieved_content = query_and_embed(user_query)
     
 
     # prompt = f"{SYSTEM_PROMPT}\n\nContext:\nplace holder for retrieved content\n\nUser Query:\n{user_query}"
-    prompt = f"Context:\n{retrieved_content}\n\nUser Query:\n{user_query}"
+    prompt = f"Context:\n{retrieved_content}\n\nAdditional Information:\n{user_info}\n\nUser Query:\n{user_query}"
 
     try:
         payload = {

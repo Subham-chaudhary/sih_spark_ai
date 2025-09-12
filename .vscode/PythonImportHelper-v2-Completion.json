@@ -356,7 +356,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def generate_response_endpoint():\n    \"\"\"\n    API endpoint to receive a query, retrieve relevant medical data,\n    and generate a response using the Qwen model.\n    \"\"\"\n    data = request.get_json()\n    if not data or 'query' not in data:\n        return jsonify({\"error\": \"Missing 'query' in request body\"}), 400\n    user_query = data['query']\n    # Retrieve relevant medical data using the query_and_embed function",
+        "peekOfCode": "def generate_response_endpoint():\n    \"\"\"\n    API endpoint to receive a query, retrieve relevant medical data,\n    and generate a response using the Qwen model.\n    \"\"\"\n    data = request.get_json()\n    if not data or 'query' not in data:\n        return jsonify({\"error\": \"Missing 'query' in request body\"}), 400\n    user_query = data['query']\n    user_info = data['info']",
         "detail": "main",
         "documentation": {}
     },
