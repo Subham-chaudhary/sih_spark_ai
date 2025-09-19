@@ -381,6 +381,14 @@
         "documentation": {}
     },
     {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
         "label": "get_db_main",
         "importPath": "config",
         "description": "config",
@@ -642,6 +650,15 @@
         "importPath": "app",
         "description": "app",
         "peekOfCode": "def quit():\n    global GOOGLE_EMBEDDING_MODEL\n    previous = GOOGLE_EMBEDDING_MODEL\n    data = request.get_json()\n    model = data.get('model')\n    GOOGLE_EMBEDDING_MODEL = model\n    return jsonify({\"current_model\": model, \"previous_model\": previous}), 200\n# --- Example Usage (for local testing) ---\nif __name__ == \"__main__\":\n    # response = google_gemini_wrapper(\"fb6082d1-e5ef-4de3-aecb-eca09f275c96\", \"I'm feeling sick\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\nCORS(app)\nGOOGLE_API_KEY = os.getenv(\"GOOGLE_API_KEY\")\nGOOGLE_EMBEDDING_MODEL = \"gemini-embedding-001\"\nGOOGLE_LLM_MODEL = \"gemini-1.5-flash-8b\"\nMAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\n#Globals for psuedo session\nUSER_ID = None\nUSER_DATA = None",
         "detail": "app",
         "documentation": {}
     },

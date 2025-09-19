@@ -6,9 +6,11 @@ from sqlalchemy.exc import SQLAlchemyError
 from typing import Dict, Any, Optional
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 load_dotenv()
-
+app = Flask(__name__)
+CORS(app)
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 GOOGLE_EMBEDDING_MODEL = "gemini-embedding-001"
 GOOGLE_LLM_MODEL = "gemini-1.5-flash-8b"
