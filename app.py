@@ -6,6 +6,7 @@ from sqlalchemy.exc import SQLAlchemyError
 from typing import Dict, Any, Optional
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify
+from sTs import EMBEDDING_MODEL
 
 load_dotenv()
 
@@ -242,6 +243,18 @@ def ask_spark_ai():
     response_text = google_gemini_wrapper(user_id, query)
     return jsonify({"response": response_text})
 
+@app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({"status": "OK"}), 200
+
+@app.route('/model', methods=['POST'])
+def quit():
+    global EMBEDDING_MODEL
+    previous = EMBEDDING_MODEL
+    data = request.get_json()
+    model = data.get('model')
+    EMBEDDING_MODEL = model
+    return jsonify({"current_model": model, "previous_model": previous}), 200
 # --- Example Usage (for local testing) ---
 if __name__ == "__main__":
     
