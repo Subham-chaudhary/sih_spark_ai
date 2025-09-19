@@ -583,15 +583,6 @@
         "documentation": {}
     },
     {
-        "label": "quitnow",
-        "kind": 2,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "def quitnow():\n    os._exit(0)\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nexcept SQLAlchemyError as e:\n    print(f\"Database connection error: {e}\")\n    quitnow()",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
         "label": "get_user_info_from_db",
         "kind": 2,
         "importPath": "app",
@@ -695,7 +686,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "MEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\n#Globals for psuedo session\nUSER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.\n    # A better approach would be to raise an exception or return an error response.\n    quitnow()",
+        "peekOfCode": "MEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\n#Globals for psuedo session\nUSER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.\n    # A better approach would be to raise an exception or return an error response.\ngenai.configure(api_key=GOOGLE_API_KEY)",
         "detail": "app",
         "documentation": {}
     },
@@ -704,7 +695,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "USER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.\n    # A better approach would be to raise an exception or return an error response.\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None",
+        "peekOfCode": "USER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.\n    # A better approach would be to raise an exception or return an error response.\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None\nMainSessionLocal = None",
         "detail": "app",
         "documentation": {}
     },
@@ -713,7 +704,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "USER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.\n    # A better approach would be to raise an exception or return an error response.\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None\nMainSessionLocal = None",
+        "peekOfCode": "USER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.\n    # A better approach would be to raise an exception or return an error response.\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None\nMainSessionLocal = None\nmedical_engine = None",
         "detail": "app",
         "documentation": {}
     },
@@ -722,7 +713,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "main_engine = None\nMainSessionLocal = None\nmedical_engine = None\nMedicalSessionLocal = None\ndef quitnow():\n    os._exit(0)\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)",
+        "peekOfCode": "main_engine = None\nMainSessionLocal = None\nmedical_engine = None\nMedicalSessionLocal = None\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nexcept SQLAlchemyError as e:",
         "detail": "app",
         "documentation": {}
     },
@@ -731,7 +722,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "MainSessionLocal = None\nmedical_engine = None\nMedicalSessionLocal = None\ndef quitnow():\n    os._exit(0)\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)",
+        "peekOfCode": "MainSessionLocal = None\nmedical_engine = None\nMedicalSessionLocal = None\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nexcept SQLAlchemyError as e:\n    print(f\"Database connection error: {e}\")",
         "detail": "app",
         "documentation": {}
     },
@@ -740,7 +731,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "medical_engine = None\nMedicalSessionLocal = None\ndef quitnow():\n    os._exit(0)\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nexcept SQLAlchemyError as e:",
+        "peekOfCode": "medical_engine = None\nMedicalSessionLocal = None\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nexcept SQLAlchemyError as e:\n    print(f\"Database connection error: {e}\")\ndef get_user_info_from_db(user_id: str) -> Optional[Dict[str, Any]]:",
         "detail": "app",
         "documentation": {}
     },
@@ -749,7 +740,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "MedicalSessionLocal = None\ndef quitnow():\n    os._exit(0)\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nexcept SQLAlchemyError as e:\n    print(f\"Database connection error: {e}\")",
+        "peekOfCode": "MedicalSessionLocal = None\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nexcept SQLAlchemyError as e:\n    print(f\"Database connection error: {e}\")\ndef get_user_info_from_db(user_id: str) -> Optional[Dict[str, Any]]:\n    if not user_id:",
         "detail": "app",
         "documentation": {}
     },
