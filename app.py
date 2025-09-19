@@ -10,7 +10,7 @@ from flask_cors import CORS
 
 load_dotenv()
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 GOOGLE_EMBEDDING_MODEL = "gemini-embedding-001"
 GOOGLE_LLM_MODEL = "gemini-1.5-flash-8b"
