@@ -44,15 +44,160 @@
         "documentation": {}
     },
     {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
+        "label": "google.generativeai",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "dotenv",
+        "importPath": "google.generativeai",
+        "description": "google.generativeai",
+        "detail": "google.generativeai",
         "documentation": {}
     },
     {
         "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "MetaData",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Table",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "JSON",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "MetaData",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Table",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "JSON",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "text",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -65,6 +210,126 @@
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
         "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemyError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemyError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
         "documentation": {}
     },
     {
@@ -92,12 +357,35 @@
         "documentation": {}
     },
     {
-        "label": "requests",
-        "kind": 6,
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
         "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "get_db_main",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
         "documentation": {}
     },
     {
@@ -141,7 +429,7 @@
         "documentation": {}
     },
     {
-        "label": "config",
+        "label": "main_engine",
         "importPath": "config",
         "description": "config",
         "isExtraImport": true,
@@ -149,7 +437,7 @@
         "documentation": {}
     },
     {
-        "label": "update_config",
+        "label": "MainSessionLocal",
         "importPath": "config",
         "description": "config",
         "isExtraImport": true,
@@ -157,11 +445,28 @@
         "documentation": {}
     },
     {
-        "label": "get_db",
-        "importPath": "config",
-        "description": "config",
+        "label": "requests",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "config",
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "importPath": "sqlalchemy.sql",
+        "description": "sqlalchemy.sql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.sql",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "importPath": "sqlalchemy.sql",
+        "description": "sqlalchemy.sql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.sql",
         "documentation": {}
     },
     {
@@ -178,6 +483,22 @@
         "description": "langchain.text_splitter",
         "isExtraImport": true,
         "detail": "langchain.text_splitter",
+        "documentation": {}
+    },
+    {
+        "label": "TextSplitter",
+        "importPath": "semantic_text_splitter",
+        "description": "semantic_text_splitter",
+        "isExtraImport": true,
+        "detail": "semantic_text_splitter",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
         "documentation": {}
     },
     {
@@ -262,11 +583,182 @@
         "documentation": {}
     },
     {
+        "label": "quitnow",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def quitnow():\n    os._exit(0)\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nexcept SQLAlchemyError as e:\n    print(f\"Database connection error: {e}\")\n    quitnow()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_info_from_db",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def get_user_info_from_db(user_id: str) -> Optional[Dict[str, Any]]:\n    if not user_id:\n        print(\"No user ID provided.\")\n        return None\n    if not MainSessionLocal:\n        print(\"Main database session factory not initialized.\")\n        return None\n    db_session_main = MainSessionLocal()\n    try:\n        query = text(\"\"\"",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "generate_embedding",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def generate_embedding(text_content: str) -> Optional[list]:\n    try:\n        response = genai.embed_content(\n            model=GOOGLE_EMBEDDING_MODEL,\n            content=text_content,\n            task_type=\"retrieval_document\"\n        )\n        print(\"Embedding generated successfully.\\n\", response['embedding'].__len__())\n        return response['embedding']\n    except Exception as e:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_medical_data",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def retrieve_medical_data(embedding: list) -> str:\n    \"\"\"\n    Retrieves relevant medical data from the medicaldata2 table using vector similarity search.\n    Mimics the logic from main.py's query_and_embed function.\n    \"\"\"\n    if not MedicalSessionLocal:\n        print(\"Medical database session factory not initialized.\")\n        return \"Error: Medical database not configured.\"\n    db_session_medical = MedicalSessionLocal()\n    try:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "google_gemini_wrapper",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def google_gemini_wrapper(user_id: str, query: str) -> str:\n    \"\"\"\n    Wrapper function to interact with Google Gemini for medical assistance.\n    It retrieves user info, generates embeddings for the query,\n    retrieves relevant medical data, and queries Gemini with context.\n    \"\"\"\n    global USER_ID, USER_DATA\n    print(f\"Received query: '{query}' for user ID: '{user_id}'\")\n    # 1. Get User Info\n    # if USER_ID == user_id:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "ask_spark_ai",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def ask_spark_ai():\n    data = request.get_json()\n    user_id = data.get('user_id')\n    query = data.get('query')\n    if not user_id or not query:\n        return jsonify({\"error\": \"user_id and query are required\"}), 400\n    response_text = google_gemini_wrapper(user_id, query)\n    return jsonify({\"response\": response_text})\n# --- Example Usage (for local testing) ---\nif __name__ == \"__main__\":",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "GOOGLE_API_KEY",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "GOOGLE_API_KEY = os.getenv(\"GOOGLE_API_KEY\")\nGOOGLE_EMBEDDING_MODEL = \"gemini-embedding-001\"\nGOOGLE_LLM_MODEL = \"gemini-1.5-flash-8b\"\nMAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\n#Globals for psuedo session\nUSER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "GOOGLE_EMBEDDING_MODEL",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "GOOGLE_EMBEDDING_MODEL = \"gemini-embedding-001\"\nGOOGLE_LLM_MODEL = \"gemini-1.5-flash-8b\"\nMAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\n#Globals for psuedo session\nUSER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "GOOGLE_LLM_MODEL",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "GOOGLE_LLM_MODEL = \"gemini-1.5-flash-8b\"\nMAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\n#Globals for psuedo session\nUSER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "MAIN_DATABASE_URL",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "MAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\n#Globals for psuedo session\nUSER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.\n    # A better approach would be to raise an exception or return an error response.",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "MEDICAL_DATABASE_URL",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "MEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\n#Globals for psuedo session\nUSER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.\n    # A better approach would be to raise an exception or return an error response.\n    quitnow()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "USER_ID",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "USER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.\n    # A better approach would be to raise an exception or return an error response.\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "USER_DATA",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "USER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.\n    # A better approach would be to raise an exception or return an error response.\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None\nMainSessionLocal = None",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "main_engine",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "main_engine = None\nMainSessionLocal = None\nmedical_engine = None\nMedicalSessionLocal = None\ndef quitnow():\n    os._exit(0)\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "MainSessionLocal",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "MainSessionLocal = None\nmedical_engine = None\nMedicalSessionLocal = None\ndef quitnow():\n    os._exit(0)\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "medical_engine",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "medical_engine = None\nMedicalSessionLocal = None\ndef quitnow():\n    os._exit(0)\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nexcept SQLAlchemyError as e:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "MedicalSessionLocal",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "MedicalSessionLocal = None\ndef quitnow():\n    os._exit(0)\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nexcept SQLAlchemyError as e:\n    print(f\"Database connection error: {e}\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "SYSTEM_PROMPT",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "SYSTEM_PROMPT = \"\"\"\nYou are Spark AI, an advanced medical assistant chatbot.\nYour responsibilities:\n1. Always start by greeting the user by name if available (from user data).\n2. Understand the user’s symptoms or health-related query. If unclear, politely ask clarifying questions before giving guidance.\n3. Use the provided data sources to guide your response:\n    - Context: retrieved medical knowledge (retrieved_content)\n    - User Data: demographic info, region, water quality, alerts, recent reports\n    - Use both to personalize advice.\n4. Provide only **pre-treatment guidance**:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\n@app.route('/ask', methods=['POST'])\ndef ask_spark_ai():\n    data = request.get_json()\n    user_id = data.get('user_id')\n    query = data.get('query')\n    if not user_id or not query:\n        return jsonify({\"error\": \"user_id and query are required\"}), 400\n    response_text = google_gemini_wrapper(user_id, query)\n    return jsonify({\"response\": response_text})",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
         "label": "Config",
         "kind": 6,
         "importPath": "config",
         "description": "config",
-        "peekOfCode": "class Config:\n    #psql here\n    DB_USER = os.getenv(\"DB_USER\", \"your_db_user\")\n    DB_PASSWORD = os.getenv(\"DB_PASSWORD\", \"your_db_password\")\n    DB_HOST = os.getenv(\"DB_HOST\", \"localhost:5432\")\n    DB_PORT = os.getenv(\"DB_PORT\", \"5432\")\n    DB_NAME = os.getenv(\"DB_NAME\", \"your_db_name\")\n    DATABASE_URL = os.getenv(\"DATABASE_URL\", f\"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}?sslmode=require&channel_binding=require\")\n    print(\"DATABASE_URL:\", DATABASE_URL)\n    #ollama here",
+        "peekOfCode": "class Config:\n    #psql here\n    DB_USER = os.getenv(\"DB_USER\")\n    DB_PASSWORD = os.getenv(\"DB_PASSWORD\")\n    DB_HOST = os.getenv(\"DB_HOST\", \"localhost:5432\")\n    DB_PORT = os.getenv(\"DB_PORT\", \"5432\")\n    DB_NAME = os.getenv(\"DB_NAME\", \"your_db_name\")\n    DATABASE_URL = os.getenv(\"DATABASE_URL\", f\"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}?sslmode=require&channel_binding=require\")\n    print(\"DATABASE_URL:\", DATABASE_URL)\n    #ollama here",
         "detail": "config",
         "documentation": {}
     },
@@ -275,7 +767,7 @@
         "kind": 2,
         "importPath": "config",
         "description": "config",
-        "peekOfCode": "def update_config(new_db_url=None, new_db_user=None, new_db_password=None, new_db_host=None, new_db_port=None, new_db_name=None, new_ollama_url=None, new_ollama_model=None):\n    global config, engine, SessionLocal\n    # global config\n    if new_db_url:\n        config.DATABASE_URL = new_db_url\n    if new_db_user:\n        config.DB_USER = new_db_user\n    if new_db_password:\n        config.DB_PASSWORD = new_db_password\n    if new_db_host:",
+        "peekOfCode": "def update_config(new_db_url=None, new_db_user=None, new_db_password=None, new_db_host=None, new_db_port=None, new_db_name=None, new_ollama_url=None, new_ollama_model=None, new_main_database_url=None):\n    global config, engine, SessionLocal, main_engine, MainSessionLocal\n    # global config\n    if new_main_database_url:\n        config.MAIN_DATABASE_URL = new_main_database_url\n    if new_db_url:\n        config.DATABASE_URL = new_db_url\n    if new_db_user:\n        config.DB_USER = new_db_user\n    if new_db_password:",
         "detail": "config",
         "documentation": {}
     },
@@ -284,7 +776,16 @@
         "kind": 2,
         "importPath": "config",
         "description": "config",
-        "peekOfCode": "def get_db():\n    \"\"\"Dependency to get a database session.\"\"\"\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "peekOfCode": "def get_db():\n    \"\"\"Dependency to get a database session.\"\"\"\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\ndef get_db_main():\n    db = MainSessionLocal()\n    try:",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "get_db_main",
+        "kind": 2,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "def get_db_main():\n    db = MainSessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
         "detail": "config",
         "documentation": {}
     },
@@ -293,7 +794,7 @@
         "kind": 5,
         "importPath": "config",
         "description": "config",
-        "peekOfCode": "config = Config()\nengine = create_engine(config.DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\ndef update_config(new_db_url=None, new_db_user=None, new_db_password=None, new_db_host=None, new_db_port=None, new_db_name=None, new_ollama_url=None, new_ollama_model=None):\n    global config, engine, SessionLocal\n    # global config\n    if new_db_url:\n        config.DATABASE_URL = new_db_url\n    if new_db_user:\n        config.DB_USER = new_db_user",
+        "peekOfCode": "config = Config()\nengine = create_engine(config.DATABASE_URL)\nmain_engine = create_engine(config.MAIN_DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nMainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\ndef update_config(new_db_url=None, new_db_user=None, new_db_password=None, new_db_host=None, new_db_port=None, new_db_name=None, new_ollama_url=None, new_ollama_model=None, new_main_database_url=None):\n    global config, engine, SessionLocal, main_engine, MainSessionLocal\n    # global config\n    if new_main_database_url:\n        config.MAIN_DATABASE_URL = new_main_database_url",
         "detail": "config",
         "documentation": {}
     },
@@ -302,7 +803,16 @@
         "kind": 5,
         "importPath": "config",
         "description": "config",
-        "peekOfCode": "engine = create_engine(config.DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\ndef update_config(new_db_url=None, new_db_user=None, new_db_password=None, new_db_host=None, new_db_port=None, new_db_name=None, new_ollama_url=None, new_ollama_model=None):\n    global config, engine, SessionLocal\n    # global config\n    if new_db_url:\n        config.DATABASE_URL = new_db_url\n    if new_db_user:\n        config.DB_USER = new_db_user\n    if new_db_password:",
+        "peekOfCode": "engine = create_engine(config.DATABASE_URL)\nmain_engine = create_engine(config.MAIN_DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nMainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\ndef update_config(new_db_url=None, new_db_user=None, new_db_password=None, new_db_host=None, new_db_port=None, new_db_name=None, new_ollama_url=None, new_ollama_model=None, new_main_database_url=None):\n    global config, engine, SessionLocal, main_engine, MainSessionLocal\n    # global config\n    if new_main_database_url:\n        config.MAIN_DATABASE_URL = new_main_database_url\n    if new_db_url:",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "main_engine",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "main_engine = create_engine(config.MAIN_DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nMainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\ndef update_config(new_db_url=None, new_db_user=None, new_db_password=None, new_db_host=None, new_db_port=None, new_db_name=None, new_ollama_url=None, new_ollama_model=None, new_main_database_url=None):\n    global config, engine, SessionLocal, main_engine, MainSessionLocal\n    # global config\n    if new_main_database_url:\n        config.MAIN_DATABASE_URL = new_main_database_url\n    if new_db_url:\n        config.DATABASE_URL = new_db_url",
         "detail": "config",
         "documentation": {}
     },
@@ -311,8 +821,26 @@
         "kind": 5,
         "importPath": "config",
         "description": "config",
-        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\ndef update_config(new_db_url=None, new_db_user=None, new_db_password=None, new_db_host=None, new_db_port=None, new_db_name=None, new_ollama_url=None, new_ollama_model=None):\n    global config, engine, SessionLocal\n    # global config\n    if new_db_url:\n        config.DATABASE_URL = new_db_url\n    if new_db_user:\n        config.DB_USER = new_db_user\n    if new_db_password:\n        config.DB_PASSWORD = new_db_password",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nMainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\ndef update_config(new_db_url=None, new_db_user=None, new_db_password=None, new_db_host=None, new_db_port=None, new_db_name=None, new_ollama_url=None, new_ollama_model=None, new_main_database_url=None):\n    global config, engine, SessionLocal, main_engine, MainSessionLocal\n    # global config\n    if new_main_database_url:\n        config.MAIN_DATABASE_URL = new_main_database_url\n    if new_db_url:\n        config.DATABASE_URL = new_db_url\n    if new_db_user:",
         "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "MainSessionLocal",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\ndef update_config(new_db_url=None, new_db_user=None, new_db_password=None, new_db_host=None, new_db_port=None, new_db_name=None, new_ollama_url=None, new_ollama_model=None, new_main_database_url=None):\n    global config, engine, SessionLocal, main_engine, MainSessionLocal\n    # global config\n    if new_main_database_url:\n        config.MAIN_DATABASE_URL = new_main_database_url\n    if new_db_url:\n        config.DATABASE_URL = new_db_url\n    if new_db_user:\n        config.DB_USER = new_db_user",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_info",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_user_info(user_id):\n    try:\n        if not user_id:\n            return \"No user ID provided.\"\n        db_session_main = next(get_db_main()) \n        query = text(\"\"\"\n        SELECT \n        user_name as name, user_role as role, story_titles as program_tile,story_contents as program_content, \n        user_hotspot_locations as location, user_hotspot_names as region, user_hotspot_descriptions as news, \n        watertest_notes as water_test_note, water_qualities as water_quality, waterbody_names as water_body_name, has_global_alert as global_alert, recent_reports as recent_report",
+        "detail": "main",
         "documentation": {}
     },
     {
@@ -356,7 +884,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def generate_response_endpoint():\n    \"\"\"\n    API endpoint to receive a query, retrieve relevant medical data,\n    and generate a response using the Qwen model.\n    \"\"\"\n    data = request.get_json()\n    if not data or 'query' not in data:\n        return jsonify({\"error\": \"Missing 'query' in request body\"}), 400\n    user_query = data['query']\n    # Retrieve relevant medical data using the query_and_embed function",
+        "peekOfCode": "def generate_response_endpoint():\n    \"\"\"\n    API endpoint to receive a query, retrieve relevant medical data,\n    and generate a response using the Qwen model.\n    \"\"\"\n    data = request.get_json()\n    if not data or 'query' not in data:\n        return jsonify({\"error\": \"Missing 'query' in request body\"}), 400\n    user_query = data['query']\n    user_id = data['user_id']",
         "detail": "main",
         "documentation": {}
     },
@@ -365,7 +893,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "app = Flask(__name__)\nSYSTEM_PROMPT = \"\"\"You are Spark AI, an advanced medical assistant chatbot.  \nYour purpose is:\n1. Understand users' symptoms and ask clarifying questions if needed.  \n2. Provide **pre-treatment advice only** (self-care, over-the-counter options, lifestyle tips).  \n3. Never give prescriptions or replace professional medical diagnosis. Always include a safety disclaimer.  \n4. Use contextual data fed into the conversation (user profile: age, sex, history; local region info: weather, current outbreaks) to tailor your responses.  \n5. Respond in a clear, empathetic, and concise tone suitable for non-medical users.  \n6. If information is missing, politely ask the user to provide it.  \n7. Stay strictly within the scope of symptoms, first-aid, and health awareness. Do not answer unrelated topics.  ",
+        "peekOfCode": "app = Flask(__name__)\nSYSTEM_PROMPT = \"\"\"\nYou are Spark AI, an advanced medical assistant chatbot. \nYour responsibilities:\n1. Greet the user by their name if available (from user data).\n2. Understand the user’s symptoms or query. If unclear, ask polite clarifying questions.\n3. Use the provided context sources:\n    - Context: retrieved medical knowledge (retrieved_content)\n    - User Data: personal info, region, water quality, alerts, reports\n    to give tailored, empathetic, and concise advice.",
         "detail": "main",
         "documentation": {}
     },
@@ -374,8 +902,224 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "SYSTEM_PROMPT = \"\"\"You are Spark AI, an advanced medical assistant chatbot.  \nYour purpose is:\n1. Understand users' symptoms and ask clarifying questions if needed.  \n2. Provide **pre-treatment advice only** (self-care, over-the-counter options, lifestyle tips).  \n3. Never give prescriptions or replace professional medical diagnosis. Always include a safety disclaimer.  \n4. Use contextual data fed into the conversation (user profile: age, sex, history; local region info: weather, current outbreaks) to tailor your responses.  \n5. Respond in a clear, empathetic, and concise tone suitable for non-medical users.  \n6. If information is missing, politely ask the user to provide it.  \n7. Stay strictly within the scope of symptoms, first-aid, and health awareness. Do not answer unrelated topics.  \nAlways end with when a treatment is suggested:  ",
+        "peekOfCode": "SYSTEM_PROMPT = \"\"\"\nYou are Spark AI, an advanced medical assistant chatbot. \nYour responsibilities:\n1. Greet the user by their name if available (from user data).\n2. Understand the user’s symptoms or query. If unclear, ask polite clarifying questions.\n3. Use the provided context sources:\n    - Context: retrieved medical knowledge (retrieved_content)\n    - User Data: personal info, region, water quality, alerts, reports\n    to give tailored, empathetic, and concise advice.\n4. Provide only **pre-treatment guidance**: lifestyle tips, self-care, safe over-the-counter options, and awareness of environmental/local risks (e.g., water quality, global alerts).",
         "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "GOOGLE_API_KEY",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "GOOGLE_API_KEY = os.getenv(\"GOOGLE_API_KEY\")\nDATABASE_URL = os.getenv(\"DATABASE_URL\")\nGOOGLE_EMBEDDING_MODEL = \"gemini-embedding-001\"\ngenai.configure(api_key=GOOGLE_API_KEY)\nmedical_engine = create_engine(DATABASE_URL)\nMedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nsession = MedicalSessionLocal()\nmetadata = MetaData()\n#fetching existing data\nresult_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "DATABASE_URL = os.getenv(\"DATABASE_URL\")\nGOOGLE_EMBEDDING_MODEL = \"gemini-embedding-001\"\ngenai.configure(api_key=GOOGLE_API_KEY)\nmedical_engine = create_engine(DATABASE_URL)\nMedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nsession = MedicalSessionLocal()\nmetadata = MetaData()\n#fetching existing data\nresult_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()\n# Convert RowProxy to dictionary",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "GOOGLE_EMBEDDING_MODEL",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "GOOGLE_EMBEDDING_MODEL = \"gemini-embedding-001\"\ngenai.configure(api_key=GOOGLE_API_KEY)\nmedical_engine = create_engine(DATABASE_URL)\nMedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nsession = MedicalSessionLocal()\nmetadata = MetaData()\n#fetching existing data\nresult_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()\n# Convert RowProxy to dictionary\nprint(\"Success: \" ,type(result_data))",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "medical_engine",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "medical_engine = create_engine(DATABASE_URL)\nMedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nsession = MedicalSessionLocal()\nmetadata = MetaData()\n#fetching existing data\nresult_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()\n# Convert RowProxy to dictionary\nprint(\"Success: \" ,type(result_data))\nprint(len(result_data))\ncontent_list = []",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "MedicalSessionLocal",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nsession = MedicalSessionLocal()\nmetadata = MetaData()\n#fetching existing data\nresult_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()\n# Convert RowProxy to dictionary\nprint(\"Success: \" ,type(result_data))\nprint(len(result_data))\ncontent_list = []\nfor content in result_data:",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "session = MedicalSessionLocal()\nmetadata = MetaData()\n#fetching existing data\nresult_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()\n# Convert RowProxy to dictionary\nprint(\"Success: \" ,type(result_data))\nprint(len(result_data))\ncontent_list = []\nfor content in result_data:\n    content_list.append(content['content'])",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "metadata",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "metadata = MetaData()\n#fetching existing data\nresult_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()\n# Convert RowProxy to dictionary\nprint(\"Success: \" ,type(result_data))\nprint(len(result_data))\ncontent_list = []\nfor content in result_data:\n    content_list.append(content['content'])\nprint(\"Successful to create content_list :\",type(content_list[0]))",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "result_data",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "result_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()\n# Convert RowProxy to dictionary\nprint(\"Success: \" ,type(result_data))\nprint(len(result_data))\ncontent_list = []\nfor content in result_data:\n    content_list.append(content['content'])\nprint(\"Successful to create content_list :\",type(content_list[0]))\ncurrent = 1\nfor chunk in content_list:",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "content_list",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "content_list = []\nfor content in result_data:\n    content_list.append(content['content'])\nprint(\"Successful to create content_list :\",type(content_list[0]))\ncurrent = 1\nfor chunk in content_list:\n    try:\n        print(\"__________________________\")\n        print(f\"Generating embedding for chunk {current} out of {len(content_list)}\")\n        current += 1",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "current",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "current = 1\nfor chunk in content_list:\n    try:\n        print(\"__________________________\")\n        print(f\"Generating embedding for chunk {current} out of {len(content_list)}\")\n        current += 1\n        response = genai.embed_content(\n            model=GOOGLE_EMBEDDING_MODEL,\n            content=chunk,\n            task_type=\"retrieval_document\" ",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "generate_embedding",
+        "kind": 2,
+        "importPath": "sTs",
+        "description": "sTs",
+        "peekOfCode": "def generate_embedding(text: str) -> list[float]:\n    try:\n        response = requests.post(OLLAMA_URL, json={\"model\": EMBEDDING_MODEL, \"prompt\": text}, timeout=30)\n        response.raise_for_status()\n        data = response.json()\n        # Ollama embeddings API returns a list of floats in 'embedding' key\n        return data.get('embedding', [])\n    except Exception as e:\n        print(f\"Ollama embedding generation error: {e}\")\n        return [] # Return empty list on error",
+        "detail": "sTs",
+        "documentation": {}
+    },
+    {
+        "label": "ollama_word_count",
+        "kind": 2,
+        "importPath": "sTs",
+        "description": "sTs",
+        "peekOfCode": "def ollama_word_count(text: str) -> int:\n    return len(text.split())\n# Function to fetch data from medicalData2\ndef fetch_medical_data(db_session) -> list[dict]:\n    result = db_session.execute(text(\"SELECT content FROM medicaldata;\")).fetchall()\n    # Convert RowProxy to dictionary\n    print(\"Success: \" ,type(result))\n    print(result[:5][0])\n    return result\nsplitter = TextSplitter.from_callback(ollama_word_count, 250) # Split based on ~200 words",
+        "detail": "sTs",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_medical_data",
+        "kind": 2,
+        "importPath": "sTs",
+        "description": "sTs",
+        "peekOfCode": "def fetch_medical_data(db_session) -> list[dict]:\n    result = db_session.execute(text(\"SELECT content FROM medicaldata;\")).fetchall()\n    # Convert RowProxy to dictionary\n    print(\"Success: \" ,type(result))\n    print(result[:5][0])\n    return result\nsplitter = TextSplitter.from_callback(ollama_word_count, 250) # Split based on ~200 words\n# Function to insert data into medicalData2\ndef insert_chunks(db_session, chunks_with_embeddings):\n    # Assuming we are appending new chunks",
+        "detail": "sTs",
+        "documentation": {}
+    },
+    {
+        "label": "insert_chunks",
+        "kind": 2,
+        "importPath": "sTs",
+        "description": "sTs",
+        "peekOfCode": "def insert_chunks(db_session, chunks_with_embeddings):\n    # Assuming we are appending new chunks\n    insert_statements = []\n    for item in chunks_with_embeddings:\n        insert_statements.append({\n            \"content\": item[\"content\"],\n            \"embedding\": item[\"embedding\"]\n        })\n    if insert_statements:\n        for item in insert_statements:",
+        "detail": "sTs",
+        "documentation": {}
+    },
+    {
+        "label": "process_data",
+        "kind": 2,
+        "importPath": "sTs",
+        "description": "sTs",
+        "peekOfCode": "def process_data():\n    db_session = SessionLocal()\n    try:\n        # Fetch existing data\n        existing_data = fetch_medical_data(db_session)\n        print(f\"Retrieved {len(existing_data)} records from medicalData.\")\n        # Concatenate text from existing data\n        long_text = \"\"\n        for record in existing_data:\n            long_text += record[0]+\" \"",
+        "detail": "sTs",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "sTs",
+        "description": "sTs",
+        "peekOfCode": "DATABASE_URL = os.getenv(\"DATABASE_URL\") \nif not DATABASE_URL:\n    print(\"DATABASE_URL not found in environment variables. Using default value.\")\n    os._exit\nprint(\"DATABASE_URL: \", DATABASE_URL)\n# Ollama API Settings\nOLLAMA_URL = \"http://localhost:11434/api/embeddings\"\nEMBEDDING_MODEL = \"mxbai-embed-large:latest\" # Using the model specified in .env\n# SQLAlchemy Setup\nengine = create_engine(DATABASE_URL)",
+        "detail": "sTs",
+        "documentation": {}
+    },
+    {
+        "label": "OLLAMA_URL",
+        "kind": 5,
+        "importPath": "sTs",
+        "description": "sTs",
+        "peekOfCode": "OLLAMA_URL = \"http://localhost:11434/api/embeddings\"\nEMBEDDING_MODEL = \"mxbai-embed-large:latest\" # Using the model specified in .env\n# SQLAlchemy Setup\nengine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nmetadata = MetaData()\n# Function to generate embeddings\ndef generate_embedding(text: str) -> list[float]:\n    try:\n        response = requests.post(OLLAMA_URL, json={\"model\": EMBEDDING_MODEL, \"prompt\": text}, timeout=30)",
+        "detail": "sTs",
+        "documentation": {}
+    },
+    {
+        "label": "EMBEDDING_MODEL",
+        "kind": 5,
+        "importPath": "sTs",
+        "description": "sTs",
+        "peekOfCode": "EMBEDDING_MODEL = \"mxbai-embed-large:latest\" # Using the model specified in .env\n# SQLAlchemy Setup\nengine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nmetadata = MetaData()\n# Function to generate embeddings\ndef generate_embedding(text: str) -> list[float]:\n    try:\n        response = requests.post(OLLAMA_URL, json={\"model\": EMBEDDING_MODEL, \"prompt\": text}, timeout=30)\n        response.raise_for_status()",
+        "detail": "sTs",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "sTs",
+        "description": "sTs",
+        "peekOfCode": "engine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nmetadata = MetaData()\n# Function to generate embeddings\ndef generate_embedding(text: str) -> list[float]:\n    try:\n        response = requests.post(OLLAMA_URL, json={\"model\": EMBEDDING_MODEL, \"prompt\": text}, timeout=30)\n        response.raise_for_status()\n        data = response.json()\n        # Ollama embeddings API returns a list of floats in 'embedding' key",
+        "detail": "sTs",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "sTs",
+        "description": "sTs",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nmetadata = MetaData()\n# Function to generate embeddings\ndef generate_embedding(text: str) -> list[float]:\n    try:\n        response = requests.post(OLLAMA_URL, json={\"model\": EMBEDDING_MODEL, \"prompt\": text}, timeout=30)\n        response.raise_for_status()\n        data = response.json()\n        # Ollama embeddings API returns a list of floats in 'embedding' key\n        return data.get('embedding', [])",
+        "detail": "sTs",
+        "documentation": {}
+    },
+    {
+        "label": "metadata",
+        "kind": 5,
+        "importPath": "sTs",
+        "description": "sTs",
+        "peekOfCode": "metadata = MetaData()\n# Function to generate embeddings\ndef generate_embedding(text: str) -> list[float]:\n    try:\n        response = requests.post(OLLAMA_URL, json={\"model\": EMBEDDING_MODEL, \"prompt\": text}, timeout=30)\n        response.raise_for_status()\n        data = response.json()\n        # Ollama embeddings API returns a list of floats in 'embedding' key\n        return data.get('embedding', [])\n    except Exception as e:",
+        "detail": "sTs",
+        "documentation": {}
+    },
+    {
+        "label": "splitter",
+        "kind": 5,
+        "importPath": "sTs",
+        "description": "sTs",
+        "peekOfCode": "splitter = TextSplitter.from_callback(ollama_word_count, 250) # Split based on ~200 words\n# Function to insert data into medicalData2\ndef insert_chunks(db_session, chunks_with_embeddings):\n    # Assuming we are appending new chunks\n    insert_statements = []\n    for item in chunks_with_embeddings:\n        insert_statements.append({\n            \"content\": item[\"content\"],\n            \"embedding\": item[\"embedding\"]\n        })",
+        "detail": "sTs",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "engine = create_engine(\"postgresql://neondb_owner:npg_luKPJEIx8jO6@ep-morning-resonance-adobddox-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require\")\n# 2. Define a query\nquery = text(\"\"\"\n    SELECT \n        user_name as name, user_role as role, story_titles as program_tile,story_contents as program_content, \n        user_hotspot_locations as location, user_hotspot_names as region, user_hotspot_descriptions as news, \n        watertest_notes as water_test_note, water_qualities as water_quality, waterbody_names as water_body_name, has_global_alert as global_alert, recent_reports as recent_report\n    FROM rag_data_view\n    WHERE user_id = :uid\n\"\"\")",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "query",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "query = text(\"\"\"\n    SELECT \n        user_name as name, user_role as role, story_titles as program_tile,story_contents as program_content, \n        user_hotspot_locations as location, user_hotspot_names as region, user_hotspot_descriptions as news, \n        watertest_notes as water_test_note, water_qualities as water_quality, waterbody_names as water_body_name, has_global_alert as global_alert, recent_reports as recent_report\n    FROM rag_data_view\n    WHERE user_id = :uid\n\"\"\")\n# 3. Execute and fetch results\nwith engine.connect() as conn:",
+        "detail": "test",
         "documentation": {}
     }
 ]
