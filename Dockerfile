@@ -6,8 +6,7 @@ WORKDIR /app
 COPY requirements.txt ./
 
 # Install Python deps
-RUN pip install --upgrade pip setuptools wheel \
- && pip install  -r requirements.txt
+RUN pip install  -r requirements.txt
 
 # Copy the app code
 COPY . .
