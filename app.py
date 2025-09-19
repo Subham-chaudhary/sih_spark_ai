@@ -5,18 +5,27 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import SQLAlchemyError
 from typing import Dict, Any, Optional
 from dotenv import load_dotenv
+from flask import Flask, request, jsonify
 
 load_dotenv()
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-GOOGLE_EMBEDDING_MODEL = "gemini-embedding-001" 
-GOOGLE_LLM_MODEL = "gemini-1.5-flash-8b" 
+GOOGLE_EMBEDDING_MODEL = "gemini-embedding-001"
+GOOGLE_LLM_MODEL = "gemini-1.5-flash-8b"
 
 MAIN_DATABASE_URL = os.getenv("MAIN_DATABASE_URL")
 MEDICAL_DATABASE_URL = os.getenv("DATABASE_URL")
 
+#Globals for psuedo session
+USER_ID = None
+USER_DATA = None
+
+
 if GOOGLE_API_KEY is None:
     print("Please set the GOOGLE_API_KEY environment variable.")
+    # In a Flask app, we might want to handle this more gracefully,
+    # but for now, we'll keep the original behavior for simplicity.
+    # A better approach would be to raise an exception or return an error response.
     quitnow()
 
 genai.configure(api_key=GOOGLE_API_KEY)
@@ -25,6 +34,7 @@ main_engine = None
 MainSessionLocal = None
 medical_engine = None
 MedicalSessionLocal = None
+
 def quitnow():
     os._exit(0)
 
@@ -35,15 +45,11 @@ try:
     medical_engine = create_engine(MEDICAL_DATABASE_URL)
     MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)
 
-
 except SQLAlchemyError as e:
     print(f"Database connection error: {e}")
     quitnow()
 
-
-    
 def get_user_info_from_db(user_id: str) -> Optional[Dict[str, Any]]:
-
     if not user_id:
         print("No user ID provided.")
         return None
@@ -75,7 +81,7 @@ def generate_embedding(text_content: str) -> Optional[list]:
         response = genai.embed_content(
             model=GOOGLE_EMBEDDING_MODEL,
             content=text_content,
-            task_type="retrieval_document" 
+            task_type="retrieval_document"
         )
         print("Embedding generated successfully.\n", response['embedding'].__len__())
         return response['embedding']
@@ -132,7 +138,7 @@ Your responsibilities:
     - Over-the-counter options if generally considered safe
 5. Never provide prescriptions or definitive diagnoses.
 6. If important info is missing (e.g., age, sex, key symptoms), politely ask the user.
-7. Stay strictly within the scope of symptoms, first aid, and health awareness. 
+7. Stay strictly within the scope of symptoms, first aid, and health awareness.
     Do not answer unrelated topics.
 8. End with the disclaimer if you gave treatment/self-care advice:
     "This is pre-treatment guidance only. Please consult a licensed doctor for a professional opinion."
@@ -145,10 +151,16 @@ def google_gemini_wrapper(user_id: str, query: str) -> str:
     It retrieves user info, generates embeddings for the query,
     retrieves relevant medical data, and queries Gemini with context.
     """
+    global USER_ID, USER_DATA
     print(f"Received query: '{query}' for user ID: '{user_id}'")
-    
-    # 1. Get User Infoclea
+
+    # 1. Get User Info
+    # if USER_ID == user_id:
+    #     user_data = USER_DATA
+    # else:
     user_data = get_user_info_from_db(user_id)
+        # USER_DATA = user_data
+        # USER_ID = user_id
     if not user_data:
         print("Could not retrieve user data. Proceeding without it.")
         user_data_str = "No user data available."
@@ -159,13 +171,13 @@ def google_gemini_wrapper(user_id: str, query: str) -> str:
     query_embedding = generate_embedding(query)
     if not query_embedding:
         return "Failed to generate embedding for the query. Please check API key and model configuration."
-    
+
     # 3. Retrieve Relevant Medical Data
     retrieved_content = retrieve_medical_data(query_embedding)
     print("Retrieved Medical Data:", retrieved_content[:100], "...", len(retrieved_content))
     if "Error retrieving" in retrieved_content or "not configured" in retrieved_content:
         return retrieved_content # Return error message from retrieval
-    
+
     # 4. Construct the Prompt for Gemini
     prompt = f"""
 System Instruction:
@@ -191,21 +203,20 @@ Guidelines for Response:
 - If guidance is provided, end with the safety disclaimer. If the response is only exploratory or asking clarifications, do not add the disclaimer.
 """
 
-
     try:
         model = genai.GenerativeModel(GOOGLE_LLM_MODEL)
         generation_config = genai.GenerationConfig(
-        temperature=0.5,  
+        temperature=0.5,
         top_p=0.9,
         top_k=40,
         candidate_count=1,
-        max_output_tokens=512 
+        max_output_tokens=512
         )
         response = model.generate_content(
             prompt,
             generation_config=generation_config
         )
-        
+
         # Basic check for empty response
         if not response.text.strip():
             return "Gemini API returned an empty response."
@@ -216,10 +227,24 @@ Guidelines for Response:
         print(f"Error calling Gemini API: {e}")
         return "An error occurred while processing your request with Gemini. Please try again later."
 
+# --- Flask App Setup ---
+app = Flask(__name__)
+
+@app.route('/ask', methods=['POST'])
+def ask_spark_ai():
+    data = request.get_json()
+    user_id = data.get('user_id')
+    query = data.get('query')
+
+    if not user_id or not query:
+        return jsonify({"error": "user_id and query are required"}), 400
+
+    response_text = google_gemini_wrapper(user_id, query)
+    return jsonify({"response": response_text})
+
 # --- Example Usage (for local testing) ---
 if __name__ == "__main__":
-
-    response = google_gemini_wrapper("fb6082d1-e5ef-4de3-aecb-eca09f275c96", "I'm feeling to vomit whats happening around me?")
-    print("\n--- Gemini Response ---")
-    print(response)
-    print("-----------------------")
+    
+    # response = google_gemini_wrapper("fb6082d1-e5ef-4de3-aecb-eca09f275c96", "I'm feeling sick")
+    # print(response.strip())
+    app.run(debug=True) # debug=True for development, set to False for production
