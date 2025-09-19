@@ -333,6 +333,54 @@
         "documentation": {}
     },
     {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
         "label": "get_db_main",
         "importPath": "config",
         "description": "config",
@@ -397,30 +445,6 @@
         "documentation": {}
     },
     {
-        "label": "Flask",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "jsonify",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
         "label": "requests",
         "kind": 6,
         "isExtraImport": true,
@@ -467,6 +491,14 @@
         "description": "semantic_text_splitter",
         "isExtraImport": true,
         "detail": "semantic_text_splitter",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
         "documentation": {}
     },
     {
@@ -573,7 +605,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def generate_embedding(text_content: str) -> Optional[list]:\n    try:\n        response = genai.embed_content(\n            model=GOOGLE_EMBEDDING_MODEL,\n            content=text_content,\n            task_type=\"retrieval_document\" \n        )\n        print(\"Embedding generated successfully.\\n\", response['embedding'].__len__())\n        return response['embedding']\n    except Exception as e:",
+        "peekOfCode": "def generate_embedding(text_content: str) -> Optional[list]:\n    try:\n        response = genai.embed_content(\n            model=GOOGLE_EMBEDDING_MODEL,\n            content=text_content,\n            task_type=\"retrieval_document\"\n        )\n        print(\"Embedding generated successfully.\\n\", response['embedding'].__len__())\n        return response['embedding']\n    except Exception as e:",
         "detail": "app",
         "documentation": {}
     },
@@ -591,7 +623,16 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def google_gemini_wrapper(user_id: str, query: str) -> str:\n    \"\"\"\n    Wrapper function to interact with Google Gemini for medical assistance.\n    It retrieves user info, generates embeddings for the query,\n    retrieves relevant medical data, and queries Gemini with context.\n    \"\"\"\n    print(f\"Received query: '{query}' for user ID: '{user_id}'\")\n    # 1. Get User Infoclea\n    user_data = get_user_info_from_db(user_id)\n    if not user_data:",
+        "peekOfCode": "def google_gemini_wrapper(user_id: str, query: str) -> str:\n    \"\"\"\n    Wrapper function to interact with Google Gemini for medical assistance.\n    It retrieves user info, generates embeddings for the query,\n    retrieves relevant medical data, and queries Gemini with context.\n    \"\"\"\n    global USER_ID, USER_DATA\n    print(f\"Received query: '{query}' for user ID: '{user_id}'\")\n    # 1. Get User Info\n    # if USER_ID == user_id:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "ask_spark_ai",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def ask_spark_ai():\n    data = request.get_json()\n    user_id = data.get('user_id')\n    query = data.get('query')\n    if not user_id or not query:\n        return jsonify({\"error\": \"user_id and query are required\"}), 400\n    response_text = google_gemini_wrapper(user_id, query)\n    return jsonify({\"response\": response_text})\n# --- Example Usage (for local testing) ---\nif __name__ == \"__main__\":",
         "detail": "app",
         "documentation": {}
     },
@@ -600,7 +641,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "GOOGLE_API_KEY = os.getenv(\"GOOGLE_API_KEY\")\nGOOGLE_EMBEDDING_MODEL = \"gemini-embedding-001\" \nGOOGLE_LLM_MODEL = \"gemini-1.5-flash-8b\" \nMAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None",
+        "peekOfCode": "GOOGLE_API_KEY = os.getenv(\"GOOGLE_API_KEY\")\nGOOGLE_EMBEDDING_MODEL = \"gemini-embedding-001\"\nGOOGLE_LLM_MODEL = \"gemini-1.5-flash-8b\"\nMAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\n#Globals for psuedo session\nUSER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")",
         "detail": "app",
         "documentation": {}
     },
@@ -609,7 +650,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "GOOGLE_EMBEDDING_MODEL = \"gemini-embedding-001\" \nGOOGLE_LLM_MODEL = \"gemini-1.5-flash-8b\" \nMAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None\nMainSessionLocal = None",
+        "peekOfCode": "GOOGLE_EMBEDDING_MODEL = \"gemini-embedding-001\"\nGOOGLE_LLM_MODEL = \"gemini-1.5-flash-8b\"\nMAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\n#Globals for psuedo session\nUSER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,",
         "detail": "app",
         "documentation": {}
     },
@@ -618,7 +659,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "GOOGLE_LLM_MODEL = \"gemini-1.5-flash-8b\" \nMAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None\nMainSessionLocal = None\nmedical_engine = None",
+        "peekOfCode": "GOOGLE_LLM_MODEL = \"gemini-1.5-flash-8b\"\nMAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\n#Globals for psuedo session\nUSER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.",
         "detail": "app",
         "documentation": {}
     },
@@ -627,7 +668,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "MAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None\nMainSessionLocal = None\nmedical_engine = None\nMedicalSessionLocal = None",
+        "peekOfCode": "MAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\n#Globals for psuedo session\nUSER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.\n    # A better approach would be to raise an exception or return an error response.",
         "detail": "app",
         "documentation": {}
     },
@@ -636,7 +677,25 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "MEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None\nMainSessionLocal = None\nmedical_engine = None\nMedicalSessionLocal = None\ndef quitnow():",
+        "peekOfCode": "MEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\n#Globals for psuedo session\nUSER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.\n    # A better approach would be to raise an exception or return an error response.\n    quitnow()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "USER_ID",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "USER_ID = None\nUSER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.\n    # A better approach would be to raise an exception or return an error response.\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "USER_DATA",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "USER_DATA = None\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    # In a Flask app, we might want to handle this more gracefully,\n    # but for now, we'll keep the original behavior for simplicity.\n    # A better approach would be to raise an exception or return an error response.\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None\nMainSessionLocal = None",
         "detail": "app",
         "documentation": {}
     },
@@ -682,6 +741,15 @@
         "importPath": "app",
         "description": "app",
         "peekOfCode": "SYSTEM_PROMPT = \"\"\"\nYou are Spark AI, an advanced medical assistant chatbot.\nYour responsibilities:\n1. Always start by greeting the user by name if available (from user data).\n2. Understand the user’s symptoms or health-related query. If unclear, politely ask clarifying questions before giving guidance.\n3. Use the provided data sources to guide your response:\n    - Context: retrieved medical knowledge (retrieved_content)\n    - User Data: demographic info, region, water quality, alerts, recent reports\n    - Use both to personalize advice.\n4. Provide only **pre-treatment guidance**:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\n@app.route('/ask', methods=['POST'])\ndef ask_spark_ai():\n    data = request.get_json()\n    user_id = data.get('user_id')\n    query = data.get('query')\n    if not user_id or not query:\n        return jsonify({\"error\": \"user_id and query are required\"}), 400\n    response_text = google_gemini_wrapper(user_id, query)\n    return jsonify({\"response\": response_text})",
         "detail": "app",
         "documentation": {}
     },
