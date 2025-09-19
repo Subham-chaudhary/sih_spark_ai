@@ -44,23 +44,88 @@
         "documentation": {}
     },
     {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
+        "label": "google.generativeai",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
+        "importPath": "google.generativeai",
+        "description": "google.generativeai",
+        "detail": "google.generativeai",
         "documentation": {}
     },
     {
         "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "MetaData",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Table",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "JSON",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -153,6 +218,118 @@
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
         "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemyError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemyError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
         "documentation": {}
     },
     {
@@ -269,6 +446,14 @@
         "documentation": {}
     },
     {
+        "label": "text",
+        "importPath": "sqlalchemy.sql",
+        "description": "sqlalchemy.sql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.sql",
+        "documentation": {}
+    },
+    {
         "label": "RecursiveCharacterTextSplitter",
         "importPath": "langchain.text_splitter",
         "description": "langchain.text_splitter",
@@ -366,11 +551,146 @@
         "documentation": {}
     },
     {
+        "label": "quitnow",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def quitnow():\n    os._exit(0)\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nexcept SQLAlchemyError as e:\n    print(f\"Database connection error: {e}\")\n    quitnow()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_info_from_db",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def get_user_info_from_db(user_id: str) -> Optional[Dict[str, Any]]:\n    if not user_id:\n        print(\"No user ID provided.\")\n        return None\n    if not MainSessionLocal:\n        print(\"Main database session factory not initialized.\")\n        return None\n    db_session_main = MainSessionLocal()\n    try:\n        query = text(\"\"\"",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "generate_embedding",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def generate_embedding(text_content: str) -> Optional[list]:\n    try:\n        response = genai.embed_content(\n            model=GOOGLE_EMBEDDING_MODEL,\n            content=text_content,\n            task_type=\"retrieval_document\" \n        )\n        print(\"Embedding generated successfully.\\n\", response['embedding'].__len__())\n        return response['embedding']\n    except Exception as e:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_medical_data",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def retrieve_medical_data(embedding: list) -> str:\n    \"\"\"\n    Retrieves relevant medical data from the medicaldata2 table using vector similarity search.\n    Mimics the logic from main.py's query_and_embed function.\n    \"\"\"\n    if not MedicalSessionLocal:\n        print(\"Medical database session factory not initialized.\")\n        return \"Error: Medical database not configured.\"\n    db_session_medical = MedicalSessionLocal()\n    try:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "google_gemini_wrapper",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def google_gemini_wrapper(user_id: str, query: str) -> str:\n    \"\"\"\n    Wrapper function to interact with Google Gemini for medical assistance.\n    It retrieves user info, generates embeddings for the query,\n    retrieves relevant medical data, and queries Gemini with context.\n    \"\"\"\n    print(f\"Received query: '{query}' for user ID: '{user_id}'\")\n    # 1. Get User Infoclea\n    user_data = get_user_info_from_db(user_id)\n    if not user_data:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "GOOGLE_API_KEY",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "GOOGLE_API_KEY = os.getenv(\"GOOGLE_API_KEY\")\nGOOGLE_EMBEDDING_MODEL = \"gemini-embedding-001\" \nGOOGLE_LLM_MODEL = \"gemini-1.5-flash-8b\" \nMAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "GOOGLE_EMBEDDING_MODEL",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "GOOGLE_EMBEDDING_MODEL = \"gemini-embedding-001\" \nGOOGLE_LLM_MODEL = \"gemini-1.5-flash-8b\" \nMAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None\nMainSessionLocal = None",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "GOOGLE_LLM_MODEL",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "GOOGLE_LLM_MODEL = \"gemini-1.5-flash-8b\" \nMAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None\nMainSessionLocal = None\nmedical_engine = None",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "MAIN_DATABASE_URL",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "MAIN_DATABASE_URL = os.getenv(\"MAIN_DATABASE_URL\")\nMEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None\nMainSessionLocal = None\nmedical_engine = None\nMedicalSessionLocal = None",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "MEDICAL_DATABASE_URL",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "MEDICAL_DATABASE_URL = os.getenv(\"DATABASE_URL\")\nif GOOGLE_API_KEY is None:\n    print(\"Please set the GOOGLE_API_KEY environment variable.\")\n    quitnow()\ngenai.configure(api_key=GOOGLE_API_KEY)\nmain_engine = None\nMainSessionLocal = None\nmedical_engine = None\nMedicalSessionLocal = None\ndef quitnow():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "main_engine",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "main_engine = None\nMainSessionLocal = None\nmedical_engine = None\nMedicalSessionLocal = None\ndef quitnow():\n    os._exit(0)\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "MainSessionLocal",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "MainSessionLocal = None\nmedical_engine = None\nMedicalSessionLocal = None\ndef quitnow():\n    os._exit(0)\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "medical_engine",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "medical_engine = None\nMedicalSessionLocal = None\ndef quitnow():\n    os._exit(0)\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nexcept SQLAlchemyError as e:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "MedicalSessionLocal",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "MedicalSessionLocal = None\ndef quitnow():\n    os._exit(0)\ntry:\n    main_engine = create_engine(MAIN_DATABASE_URL)\n    MainSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=main_engine)\n    medical_engine = create_engine(MEDICAL_DATABASE_URL)\n    MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nexcept SQLAlchemyError as e:\n    print(f\"Database connection error: {e}\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "SYSTEM_PROMPT",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "SYSTEM_PROMPT = \"\"\"\nYou are Spark AI, an advanced medical assistant chatbot.\nYour responsibilities:\n1. Always start by greeting the user by name if available (from user data).\n2. Understand the user’s symptoms or health-related query. If unclear, politely ask clarifying questions before giving guidance.\n3. Use the provided data sources to guide your response:\n    - Context: retrieved medical knowledge (retrieved_content)\n    - User Data: demographic info, region, water quality, alerts, recent reports\n    - Use both to personalize advice.\n4. Provide only **pre-treatment guidance**:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
         "label": "Config",
         "kind": 6,
         "importPath": "config",
         "description": "config",
-        "peekOfCode": "class Config:\n    #psql here\n    DB_USER = os.getenv(\"DB_USER\", \"your_db_user\")\n    DB_PASSWORD = os.getenv(\"DB_PASSWORD\", \"your_db_password\")\n    DB_HOST = os.getenv(\"DB_HOST\", \"localhost:5432\")\n    DB_PORT = os.getenv(\"DB_PORT\", \"5432\")\n    DB_NAME = os.getenv(\"DB_NAME\", \"your_db_name\")\n    DATABASE_URL = os.getenv(\"DATABASE_URL\", f\"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}?sslmode=require&channel_binding=require\")\n    print(\"DATABASE_URL:\", DATABASE_URL)\n    #ollama here",
+        "peekOfCode": "class Config:\n    #psql here\n    DB_USER = os.getenv(\"DB_USER\")\n    DB_PASSWORD = os.getenv(\"DB_PASSWORD\")\n    DB_HOST = os.getenv(\"DB_HOST\", \"localhost:5432\")\n    DB_PORT = os.getenv(\"DB_PORT\", \"5432\")\n    DB_NAME = os.getenv(\"DB_NAME\", \"your_db_name\")\n    DATABASE_URL = os.getenv(\"DATABASE_URL\", f\"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}?sslmode=require&channel_binding=require\")\n    print(\"DATABASE_URL:\", DATABASE_URL)\n    #ollama here",
         "detail": "config",
         "documentation": {}
     },
@@ -516,6 +836,96 @@
         "description": "main",
         "peekOfCode": "SYSTEM_PROMPT = \"\"\"\nYou are Spark AI, an advanced medical assistant chatbot. \nYour responsibilities:\n1. Greet the user by their name if available (from user data).\n2. Understand the user’s symptoms or query. If unclear, ask polite clarifying questions.\n3. Use the provided context sources:\n    - Context: retrieved medical knowledge (retrieved_content)\n    - User Data: personal info, region, water quality, alerts, reports\n    to give tailored, empathetic, and concise advice.\n4. Provide only **pre-treatment guidance**: lifestyle tips, self-care, safe over-the-counter options, and awareness of environmental/local risks (e.g., water quality, global alerts).",
         "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "GOOGLE_API_KEY",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "GOOGLE_API_KEY = os.getenv(\"GOOGLE_API_KEY\")\nDATABASE_URL = os.getenv(\"DATABASE_URL\")\nGOOGLE_EMBEDDING_MODEL = \"gemini-embedding-001\"\ngenai.configure(api_key=GOOGLE_API_KEY)\nmedical_engine = create_engine(DATABASE_URL)\nMedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nsession = MedicalSessionLocal()\nmetadata = MetaData()\n#fetching existing data\nresult_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "DATABASE_URL = os.getenv(\"DATABASE_URL\")\nGOOGLE_EMBEDDING_MODEL = \"gemini-embedding-001\"\ngenai.configure(api_key=GOOGLE_API_KEY)\nmedical_engine = create_engine(DATABASE_URL)\nMedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nsession = MedicalSessionLocal()\nmetadata = MetaData()\n#fetching existing data\nresult_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()\n# Convert RowProxy to dictionary",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "GOOGLE_EMBEDDING_MODEL",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "GOOGLE_EMBEDDING_MODEL = \"gemini-embedding-001\"\ngenai.configure(api_key=GOOGLE_API_KEY)\nmedical_engine = create_engine(DATABASE_URL)\nMedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nsession = MedicalSessionLocal()\nmetadata = MetaData()\n#fetching existing data\nresult_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()\n# Convert RowProxy to dictionary\nprint(\"Success: \" ,type(result_data))",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "medical_engine",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "medical_engine = create_engine(DATABASE_URL)\nMedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nsession = MedicalSessionLocal()\nmetadata = MetaData()\n#fetching existing data\nresult_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()\n# Convert RowProxy to dictionary\nprint(\"Success: \" ,type(result_data))\nprint(len(result_data))\ncontent_list = []",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "MedicalSessionLocal",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "MedicalSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=medical_engine)\nsession = MedicalSessionLocal()\nmetadata = MetaData()\n#fetching existing data\nresult_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()\n# Convert RowProxy to dictionary\nprint(\"Success: \" ,type(result_data))\nprint(len(result_data))\ncontent_list = []\nfor content in result_data:",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "session = MedicalSessionLocal()\nmetadata = MetaData()\n#fetching existing data\nresult_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()\n# Convert RowProxy to dictionary\nprint(\"Success: \" ,type(result_data))\nprint(len(result_data))\ncontent_list = []\nfor content in result_data:\n    content_list.append(content['content'])",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "metadata",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "metadata = MetaData()\n#fetching existing data\nresult_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()\n# Convert RowProxy to dictionary\nprint(\"Success: \" ,type(result_data))\nprint(len(result_data))\ncontent_list = []\nfor content in result_data:\n    content_list.append(content['content'])\nprint(\"Successful to create content_list :\",type(content_list[0]))",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "result_data",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "result_data = session.execute(text(\"SELECT content FROM medicaldata2;\")).mappings().fetchall()\n# Convert RowProxy to dictionary\nprint(\"Success: \" ,type(result_data))\nprint(len(result_data))\ncontent_list = []\nfor content in result_data:\n    content_list.append(content['content'])\nprint(\"Successful to create content_list :\",type(content_list[0]))\ncurrent = 1\nfor chunk in content_list:",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "content_list",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "content_list = []\nfor content in result_data:\n    content_list.append(content['content'])\nprint(\"Successful to create content_list :\",type(content_list[0]))\ncurrent = 1\nfor chunk in content_list:\n    try:\n        print(\"__________________________\")\n        print(f\"Generating embedding for chunk {current} out of {len(content_list)}\")\n        current += 1",
+        "detail": "migrate",
+        "documentation": {}
+    },
+    {
+        "label": "current",
+        "kind": 5,
+        "importPath": "migrate",
+        "description": "migrate",
+        "peekOfCode": "current = 1\nfor chunk in content_list:\n    try:\n        print(\"__________________________\")\n        print(f\"Generating embedding for chunk {current} out of {len(content_list)}\")\n        current += 1\n        response = genai.embed_content(\n            model=GOOGLE_EMBEDDING_MODEL,\n            content=chunk,\n            task_type=\"retrieval_document\" ",
+        "detail": "migrate",
         "documentation": {}
     },
     {
