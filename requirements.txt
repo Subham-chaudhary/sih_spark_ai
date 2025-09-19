@@ -1,6 +1,7 @@
-flask
-google-generativeai
-sqlalchemy
-python-dotenv
-gunicorn
-psycopg2-binary
+Flask==3.1.0
+gunicorn==23.0.0
+python-dotenv==1.1.1
+SQLAlchemy==2.0.38
+pgvector==0.4.0
+psycopg2==2.9.10
+google-generativeai==0.8.5
