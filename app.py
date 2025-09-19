@@ -6,7 +6,6 @@ from sqlalchemy.exc import SQLAlchemyError
 from typing import Dict, Any, Optional
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify
-from sTs import EMBEDDING_MODEL
 
 load_dotenv()
 
@@ -249,11 +248,11 @@ def health_check():
 
 @app.route('/model', methods=['POST'])
 def quit():
-    global EMBEDDING_MODEL
-    previous = EMBEDDING_MODEL
+    global GOOGLE_EMBEDDING_MODEL
+    previous = GOOGLE_EMBEDDING_MODEL
     data = request.get_json()
     model = data.get('model')
-    EMBEDDING_MODEL = model
+    GOOGLE_EMBEDDING_MODEL = model
     return jsonify({"current_model": model, "previous_model": previous}), 200
 # --- Example Usage (for local testing) ---
 if __name__ == "__main__":

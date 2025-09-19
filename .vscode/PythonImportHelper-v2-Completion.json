@@ -632,7 +632,25 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def ask_spark_ai():\n    data = request.get_json()\n    user_id = data.get('user_id')\n    query = data.get('query')\n    if not user_id or not query:\n        return jsonify({\"error\": \"user_id and query are required\"}), 400\n    response_text = google_gemini_wrapper(user_id, query)\n    return jsonify({\"response\": response_text})\n# --- Example Usage (for local testing) ---\nif __name__ == \"__main__\":",
+        "peekOfCode": "def ask_spark_ai():\n    data = request.get_json()\n    user_id = data.get('user_id')\n    query = data.get('query')\n    if not user_id or not query:\n        return jsonify({\"error\": \"user_id and query are required\"}), 400\n    response_text = google_gemini_wrapper(user_id, query)\n    return jsonify({\"response\": response_text})\n@app.route('/health', methods=['GET'])\ndef health_check():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "health_check",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def health_check():\n    return jsonify({\"status\": \"OK\"}), 200\n@app.route('/model', methods=['POST'])\ndef quit():\n    global GOOGLE_EMBEDDING_MODEL\n    previous = GOOGLE_EMBEDDING_MODEL\n    data = request.get_json()\n    model = data.get('model')\n    GOOGLE_EMBEDDING_MODEL = model\n    return jsonify({\"current_model\": model, \"previous_model\": previous}), 200",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "quit",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def quit():\n    global GOOGLE_EMBEDDING_MODEL\n    previous = GOOGLE_EMBEDDING_MODEL\n    data = request.get_json()\n    model = data.get('model')\n    GOOGLE_EMBEDDING_MODEL = model\n    return jsonify({\"current_model\": model, \"previous_model\": previous}), 200\n# --- Example Usage (for local testing) ---\nif __name__ == \"__main__\":\n    # response = google_gemini_wrapper(\"fb6082d1-e5ef-4de3-aecb-eca09f275c96\", \"I'm feeling sick\")",
         "detail": "app",
         "documentation": {}
     },
