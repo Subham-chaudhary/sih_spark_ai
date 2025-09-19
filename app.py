@@ -26,7 +26,6 @@ if GOOGLE_API_KEY is None:
     # In a Flask app, we might want to handle this more gracefully,
     # but for now, we'll keep the original behavior for simplicity.
     # A better approach would be to raise an exception or return an error response.
-    quitnow()
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
@@ -35,8 +34,6 @@ MainSessionLocal = None
 medical_engine = None
 MedicalSessionLocal = None
 
-def quitnow():
-    os._exit(0)
 
 try:
     main_engine = create_engine(MAIN_DATABASE_URL)
@@ -47,7 +44,6 @@ try:
 
 except SQLAlchemyError as e:
     print(f"Database connection error: {e}")
-    quitnow()
 
 def get_user_info_from_db(user_id: str) -> Optional[Dict[str, Any]]:
     if not user_id:
